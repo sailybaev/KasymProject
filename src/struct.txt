@@ -1,0 +1,57 @@
+marketplace-app/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── assets/                # Images, icons, fonts, etc.
+│   ├── components/            # Reusable UI components (buttons, cards, etc.)
+│   ├── features/              # Domain-specific modules (e.g., auth, products)
+│   │   ├── auth/
+│   │   │   ├── components/    # Auth-specific UI
+│   │   │   ├── hooks/
+│   │   │   ├── authSlice.ts   # (If using Redux or Zustand)
+│   │   │   └── authService.ts
+│   │   └── products/
+│   │       ├── components/
+│   │       ├── hooks/
+│   │       ├── productSlice.ts
+│   │       └── productService.ts
+│   │
+│   ├── pages/                 # Route-level components (Home, ProductDetail, etc.)
+│   │   ├── Home.tsx
+│   │   ├── ProductDetail.tsx
+│   │   └── Cart.tsx
+│   │
+│   ├── layouts/               # Page layouts (e.g., with navbar, footer)
+│   │   └── MainLayout.tsx
+│   │
+│   ├── routes/                # React Router route configs
+│   │   └── AppRoutes.tsx
+│   │
+│   ├── contexts/              # React Context providers
+│   │   └── ThemeContext.tsx
+│   │
+│   ├── store/                 # Redux/Zustand store setup
+│   │   └── index.ts
+│   │
+│   ├── utils/                 # Utility functions and helpers
+│   │   └── formatPrice.ts
+│   │
+│   ├── hooks/                 # Global reusable hooks
+│   │   └── useDebounce.ts
+│   │
+│   ├── services/              # API service layer (axios/fetch wrappers)
+│   │   └── api.ts
+│   │
+│   ├── types/                 # Global TypeScript interfaces/types
+│   │   └── product.ts
+│   │
+│   ├── App.tsx
+│   ├── main.tsx              # or index.tsx (Vite or CRA)
+│   └── tailwind.config.ts    # if using Tailwind
+│
+├── .env                      # Environment variables
+├── .gitignore
+├── package.json
+└── tsconfig.json             # if using TypeScript
